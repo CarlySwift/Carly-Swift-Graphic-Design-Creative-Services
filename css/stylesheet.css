@@ -10,7 +10,7 @@ p {
   font-weight: 300;
 }
 
-h3 {
+h1 {
   font-size: 3em;
   font-weight: 400;
   margin:0;
@@ -20,7 +20,7 @@ h3 {
 
 }
 
-h6 {
+h2 {
   font-size: 1.3em;
   font-weight: 300;
   margin: 0;
@@ -30,6 +30,22 @@ h6 {
 
 }
 
+h3 {
+  font-size: .5em;
+  font-weight: 300;
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.white-heading {
+  color: white;
+}
 
 /* Navigation bar */
 
@@ -156,39 +172,59 @@ header {
 
 
 .designer {
-  position:relative;
   display: flex;
+  width: 100%;
+  background-color: #EBEBEB;
+
 
 }
 
 
 
 .myphoto {
-  width: 150px;
-  height: 150px;
+  width: 300px;
+  height: 300px;
   border-radius: 75px;
   background: url(../images/c+b_image-011.jpg);
-  background-size: contain;
+  background-size: cover;
 }
 
 
 .solutions{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+}
+
+.services {
+  display: flex;
+  flex-direction: row wrap;
 }
 
 
 .some-work {
-  display:inline-block;
+  display: flex;
+  flex-flow: row wrap;
 }
 
-.portfolio1 {
-  width:30%;
-  height:auto;
-  border-radius: 75px
+.portfolio {
+
 }
 
-.portfolio1:hover {
+footer {
+  width: 100%;
+  display: flex;
+  background: rgba(76,76,76,1);
+  background: -moz-linear-gradient(-45deg, rgba(76,76,76,1) 0%, rgba(36,36,36,1) 100%);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(76,76,76,1)), color-stop(100%, rgba(36,36,36,1)));
+  background: -webkit-linear-gradient(-45deg, rgba(76,76,76,1) 0%, rgba(36,36,36,1) 100%);
+  background: -o-linear-gradient(-45deg, rgba(76,76,76,1) 0%, rgba(36,36,36,1) 100%);
+  background: -ms-linear-gradient(-45deg, rgba(76,76,76,1) 0%, rgba(36,36,36,1) 100%);
+  background: linear-gradient(135deg, rgba(76,76,76,1) 0%, rgba(36,36,36,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#242424', GradientType=1 );
+
+}
+
+.connect {
 
 }
 
