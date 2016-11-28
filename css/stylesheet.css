@@ -194,8 +194,6 @@ header {
   flex-flow: column;
   align-items: center;
   padding-top:100px;
-  /*background-color: rgba(0, 0, 0, 0.5);*/
-  /*position: relative;*/
   width: auto;
   z-index: 2;
   color: white;
@@ -203,7 +201,7 @@ header {
 
 
 .designer {
-  display: flex;;
+  display: flex;
   flex-direction: column;
   align-items: center;
   padding: 30px;
@@ -218,13 +216,15 @@ header {
 
 .myphoto {
   height: 100px;
-  border-radius: 75px;
   align-self: flex-end;
+  clear: both;
+
 }
 
 .designer p {
   align-self: flex-start;
-  width: 50% auto;
+  max-width: 70%;
+  clear: both;
 }
 
 
