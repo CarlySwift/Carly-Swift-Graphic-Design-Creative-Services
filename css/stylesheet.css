@@ -199,6 +199,12 @@ header {
   color: white;
 }
 
+.empty {
+  height: 300px;
+  width: 100%;
+
+}
+
 
 .designer {
   display: flex;
@@ -257,13 +263,16 @@ header {
 .some-work {
   width: auto;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
+  align-content: center;
   padding: 30px;
 
 }
 
 .portfolio {
-
+ width:250px;
+ height: 250px;
+ background-color: gainsboro;
 }
 
 footer {
