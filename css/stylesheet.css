@@ -92,12 +92,19 @@ nav {
   justify-content: space-between;
   align-items: center;
   background: rgba(76,76,76,1);
+  background: -moz-linear-gradient(-45deg, rgba(76,76,76,1) 0%, rgba(36,36,36,1) 100%);
+  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(76,76,76,1)), color-stop(100%, rgba(36,36,36,1)));
+  background: -webkit-linear-gradient(-45deg, rgba(76,76,76,1) 0%, rgba(36,36,36,1) 100%);
+  background: -o-linear-gradient(-45deg, rgba(76,76,76,1) 0%, rgba(36,36,36,1) 100%);
+  background: -ms-linear-gradient(-45deg, rgba(76,76,76,1) 0%, rgba(36,36,36,1) 100%);
+  background: linear-gradient(135deg, rgba(76,76,76,1) 0%, rgba(36,36,36,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#242424', GradientType=1 );
+
 }
 
 .logo {
   display: flex;
   align-self: flex-start;
-
 }
 
 .navigation-list {
@@ -114,6 +121,7 @@ nav {
   display: flex;
   flex-flow: row;
   margin-right: 25px;
+  margin-top: 30px;
 }
 
 nav a {
@@ -154,36 +162,34 @@ header {
   flex-direction: column;
   background: url(../images/rotation4.jpg);
   background-size: cover;
-  margin: 0px;
   width: 100%;
   height: 400px;
   z-index: -1;
-  margin-top: -25px;
 }
 
 #banner {
   display: flex;
   flex-flow: column;
   align-items: center;
-  padding-top:100px;
+  margin-top: 75px;
   width: auto;
+  padding: 20px 20px 0 20px;
   z-index: 2;
   color: white;
+  border: 8px solid #fff;
 }
 
 .first-section {
   height: 300px;
   width: 100%;
-
 }
-
 
 .light-grey-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 30px;
-  background-color: #EBEBEB;
+  background-color: #ebebeb;
   background-size: auto;
 }
 
@@ -196,7 +202,6 @@ header {
   height: 100px;
   align-self: flex-end;
   clear: both;
-
 }
 
 .designer p {
@@ -205,17 +210,19 @@ header {
   clear: both;
 }
 
-
 .solutions{
+  width: 100%;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-flow: column wrap;
+  align-content: center;
+  padding: 25px;
+  background: #EBEBEB;
 }
 
 .solutions-list {
   display: flex;
-  flex-direction: row;
-
+  flex-flow: row wrap;
+  align-self: center;
 }
 
 .services {
