@@ -8,6 +8,8 @@ p {
   font-family: 'Source Sans Pro', sans-serif;
   color: grey;
   font-weight: 300;
+  font-size: 1.2em;
+  line-height: 1.5em;
 }
 
 h1 {
