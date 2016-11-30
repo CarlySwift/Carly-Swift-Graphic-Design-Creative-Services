@@ -30,7 +30,6 @@ h2 {
   letter-spacing: 0.1em;
   color: grey;
   align-self: center;
-
 }
 
 h3 {
@@ -41,7 +40,6 @@ h3 {
   letter-spacing: 0.1em;
   color: white;
   align-self: center;
-
 }
 
 h4 {
@@ -61,7 +59,6 @@ h5 {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: white;
-
 }
 
 ul {
@@ -71,12 +68,17 @@ ul {
 }
 
 li {
-  font-family:   font-family: 'Source Sans Pro', sans-serif;
+  font-family: font-family: 'Source Sans Pro', sans-serif;
   font-weight: 300;
 }
 
 .white-heading {
   color: white;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 75%;
 }
 
 /* Navigation bar */
@@ -85,7 +87,8 @@ nav {
   display: flex;
   flex-flow: row wrap;
   overflow: visible;
-  z-index:100;
+  padding: 10px 15px;
+  z-index: 100;
   justify-content: space-between;
   align-items: center;
   background: rgba(76,76,76,1);
@@ -96,36 +99,12 @@ nav {
   background: -ms-linear-gradient(-45deg, rgba(76,76,76,1) 0%, rgba(36,36,36,1) 100%);
   background: linear-gradient(135deg, rgba(76,76,76,1) 0%, rgba(36,36,36,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#242424', GradientType=1 );
-  transform: skewY(-2deg);
-  overflow: visible;
-}
 
-nav.before {
-  z-index: -1;
-  content: '';
-  position: relative;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  overflow: visible;
-  width: 100%;
-  height:200px;
-  background: rgba(76,76,76,1);
-  background: -moz-linear-gradient(-45deg, rgba(76,76,76,1) 0%, rgba(36,36,36,1) 100%);
-  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(76,76,76,1)), color-stop(100%, rgba(36,36,36,1)));
-  background: -webkit-linear-gradient(-45deg, rgba(76,76,76,1) 0%, rgba(36,36,36,1) 100%);
-  background: -o-linear-gradient(-45deg, rgba(76,76,76,1) 0%, rgba(36,36,36,1) 100%);
-  background: -ms-linear-gradient(-45deg, rgba(76,76,76,1) 0%, rgba(36,36,36,1) 100%);
-  background: linear-gradient(135deg, rgba(76,76,76,1) 0%, rgba(36,36,36,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#242424', GradientType=1 );
 }
 
 .logo {
   display: flex;
   align-self: flex-start;
-  margin: 20px;
-  margin-top: 15px;
-  transform: skewY(+2deg);
 }
 
 .navigation-list {
@@ -136,14 +115,13 @@ nav.before {
   text-transform: uppercase;
   font-weight: 300;
   letter-spacing: 0.3em;
-  transform: skewY(+2deg);
-
 }
 
 .navigation-list > li {
   display: flex;
   flex-flow: row;
   margin-right: 25px;
+  margin-top: 30px;
 }
 
 nav a {
@@ -184,36 +162,29 @@ header {
   flex-direction: column;
   background: url(../images/rotation4.jpg);
   background-size: cover;
-  margin: 0px;
   width: 100%;
   height: 400px;
   z-index: -1;
-  margin-top: -25px;
 }
 
-.banner {
+#banner {
   display: flex;
   flex-flow: column;
   align-items: center;
-  padding-top:100px;
+  margin-top: 75px;
   width: auto;
+  padding: 20px 20px 0 20px;
   z-index: 2;
   color: white;
+  border: 8px solid #fff;
 }
 
-.first-section {
-  height: 300px;
-  width: 100%;
-
-}
-
-
-.light-grey-section {
+.designer {
   display: flex;
   flex-direction: column;
   align-items: center;
   padding: 30px;
-  background-color: #EBEBEB;
+  background-color: #ebebeb;
   background-size: auto;
 }
 
@@ -226,7 +197,6 @@ header {
   height: 100px;
   align-self: flex-end;
   clear: both;
-
 }
 
 .designer p {
@@ -235,55 +205,90 @@ header {
   clear: both;
 }
 
-
 .solutions{
+  width: 100%;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  flex-flow: column wrap;
+  align-content: center;
+  padding: 25px;
+  background: #EBEBEB;
 }
 
 .solutions-list {
   display: flex;
-  flex-direction: row;
-
+  flex-flow: row wrap;
+  align-self: center;
 }
 
-.services {
- padding: 10px;
+.solutions-list li {
+  margin: 25px 50px 15px 50px;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
 }
 
-.services.hover {
-
+.solutions-list h3 {
+  color: #666;
+  text-align: center;
+}
+.solutions-list a {
+  text-decoration:none;
 }
 
-.over {
-  display:block;
-  height: 50px;
-
+.digital {
+  background: url("../images/ComepleteDesignSolution_digital.png")
+}
+.photography {
+  background: url("../images/ComepleteDesignSolution_photography.png")
+}
+.copywriting {
+  background: url("../images/ComepleteDesignSolution_copywritting.png")
+}
+.illustration {
+  background: url("../images/ComepleteDesignSolution_illustration.png")
+}
+.print {
+  background: url("../images/ComepleteDesignSolution_print.png")
+}
+.solutions-list li:hover {
+  background-position: -101px 0px;
 }
 
 .some-work {
-  width: auto;
+  max-width: 100%;
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column wrap;
   align-content: center;
-  align-items: stretch;
   padding: 30px;
-
 }
 
 .portfolio {
- width:250px;
- height: 250px;
- background-color: gainsboro;
- margin: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  align-self: center;
+}
+
+.portfolio li {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  background-color: gainsboro;
+  margin: 10px;
+}
+
+.email {
+  max-width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  padding: 30px;
 }
 
 footer {
-  width: auto;
   display: flex;
-  align-items: center;
-
+  max-width: 100%;
+  height: 100px;
+  padding: 25px;
   background: rgba(76,76,76,1);
   background: -moz-linear-gradient(-45deg, rgba(76,76,76,1) 0%, rgba(36,36,36,1) 100%);
   background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(76,76,76,1)), color-stop(100%, rgba(36,36,36,1)));
@@ -292,22 +297,39 @@ footer {
   background: -ms-linear-gradient(-45deg, rgba(76,76,76,1) 0%, rgba(36,36,36,1) 100%);
   background: linear-gradient(135deg, rgba(76,76,76,1) 0%, rgba(36,36,36,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#242424', GradientType=1 );
-
 }
 
-.connect {
-
+.copyright {
+  font-size: 0.8em;
+  display: flex;
+  flex-flow: row;
+  align-self: center;
 }
-
-
+.copyright i {
+  margin-right: 10px;
+}
+.social-bugs {
+  flex-direction: row;
+  align-items: center;
+}
 .social-list {
+  display: flex;
   list-style-type: none;
   font-size: 0.8em;
   color: white;
   line-height: 25px;
-  padding-right: 30px;
+  flex-direction: row;
 }
 
-.social-list:hover {
+.social-list li a{
+  text-decoration: none;
+  color: #fff;
+  margin-left: 10px;
+}
+.social-list li i{
+  margin-right: 10px;
+}
+.social-list li a:hover {
   color: gainsboro;
+  text-decoration: overline;
 }
