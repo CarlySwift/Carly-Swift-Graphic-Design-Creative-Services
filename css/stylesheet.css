@@ -191,6 +191,7 @@ header {
 .img-circle {
   width: 200px;
   border-radius: 50%;
+  margin:0 auto;
 }
 
 .myphoto {
@@ -204,6 +205,19 @@ header {
   max-width: 70%;
   clear: both;
 }
+
+@media all and (max-width: 600px) {
+    .img-circle{
+      align-self: center;
+    }
+
+    .designer p {
+      max-width: 90%;
+      align-self: center;
+      text-align: center;
+    }
+}
+
 
 .solutions{
   width: 100%;
@@ -303,10 +317,11 @@ footer {
   font-size: 0.8em;
   display: flex;
   flex-flow: row;
-  align-self: center;
+  align-self: flex-end;
 }
 .copyright i {
   margin-right: 10px;
+
 }
 .social-bugs {
   flex-direction: row;
@@ -319,6 +334,8 @@ footer {
   color: white;
   line-height: 25px;
   flex-direction: row;
+  align-self: center;
+  justify-content: space-between;
 }
 
 .social-list li a{
