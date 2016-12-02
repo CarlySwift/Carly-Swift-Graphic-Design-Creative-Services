@@ -179,6 +179,28 @@ header {
   border: 8px solid #fff;
 }
 
+button {
+  font-size: 0.75em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  text-align: center;
+  cursor: pointer;
+  color: white;
+  border: white 7px solid;
+  height: 60px;
+  width:300px;
+  background-color: transparent;
+  margin-top: 25px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+button:hover {
+  background-color: rgba(255, 0, 0, 0.5);
+
+}
+
 .designer {
   display: flex;
   flex-direction: column;
@@ -192,6 +214,9 @@ header {
   width: 200px;
   border-radius: 50%;
   margin:0 auto;
+  margin-bottom: 10px;
+  clear: both;
+
 }
 
 .myphoto {
@@ -207,7 +232,10 @@ header {
 }
 
 @media all and (max-width: 600px) {
-    .img-circle{
+    .img-circle {
+      align-self: center;
+    }
+    .myphoto {
       align-self: center;
     }
 
@@ -218,8 +246,7 @@ header {
     }
 }
 
-
-.solutions{
+.solutions {
   width: 100%;
   display: flex;
   flex-flow: column wrap;
@@ -286,9 +313,48 @@ header {
   width: 220px;
   height: 220px;
   border-radius: 50%;
-  background-color: gainsboro;
   margin: 10px;
 }
+.portfolio1 {
+  background: url("../images/image-0086.JPG") center center;
+  height: 220px;
+  width: 220px;
+}
+.portfolio2 {
+  background: url("../images/image-0086.JPG") center center;
+  height: 220px;
+  width: 220px;
+}
+.portfolio3 {
+  background: url("../images/image-0086.JPG") center center;
+  height: 220px;
+  width: 220px;
+}
+.portfolio3 {
+  background: url("../images/image-0086.JPG") center center;
+  height: 220px;
+  width: 220px;
+}
+.portfolio4 {
+  background: url("../images/image-0086.JPG") center center;
+  height: 220px;
+  width: 220px;
+}
+
+.portfolio5 {
+  background: url("../images/image-0086.JPG") center center;
+  height: 220px;
+  width: 220px;
+}
+
+.portfolio6 {
+  background: url("../images/image-0086.JPG") center center;
+  height: 220px;
+  width: 220px;
+}
+
+
+
 
 .email {
   max-width: 100%;
@@ -314,19 +380,22 @@ footer {
 }
 
 .copyright {
-  font-size: 0.8em;
+  font-size: 0.6em;
   display: flex;
   flex-flow: row;
-  align-self: flex-end;
+  margin-left: 80%;
 }
+
 .copyright i {
   margin-right: 10px;
-
 }
+
 .social-bugs {
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
 }
+
 .social-list {
   display: flex;
   list-style-type: none;
@@ -335,7 +404,6 @@ footer {
   line-height: 25px;
   flex-direction: row;
   align-self: center;
-  justify-content: space-between;
 }
 
 .social-list li a{
