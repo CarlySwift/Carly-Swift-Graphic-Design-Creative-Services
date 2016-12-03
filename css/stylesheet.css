@@ -171,16 +171,16 @@ header {
   display: flex;
   flex-flow: column;
   align-items: center;
-  margin-top: 75px;
+  margin-top: 30px;
   width: auto;
-  padding: 20px 20px 0 20px;
+  padding: 20px 20px 10px 20px;
   z-index: 2;
   color: white;
   border: 8px solid #fff;
 }
 
 button {
-  font-size: 0.75em;
+  font-size: 0.82em;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.5em;
@@ -188,12 +188,10 @@ button {
   cursor: pointer;
   color: white;
   border: white 7px solid;
-  height: 60px;
-  width:300px;
+  height: auto;
+  width: auto;
   background-color: transparent;
   margin-top: 25px;
-  padding-top: 5px;
-  padding-bottom: 10px;
 }
 
 button:hover {
@@ -210,39 +208,47 @@ button:hover {
   background-size: auto;
 }
 
+.designer2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ebebeb;
+  background-size: auto;
+}
+
 .img-circle {
   width: 200px;
   border-radius: 50%;
   margin:0 auto;
   margin-bottom: 10px;
   clear: both;
-
 }
 
-.myphoto {
-  height: 100px;
-  align-self: flex-end;
-  clear: both;
-}
-
-.designer p {
+.designer2 p {
   align-self: flex-start;
   max-width: 70%;
-  clear: both;
 }
 
-@media all and (max-width: 600px) {
+@media all and (max-width: 800px) {
     .img-circle {
-      align-self: center;
-    }
-    .myphoto {
+      width: 300px;
+      height: 300px
       align-self: center;
     }
 
-    .designer p {
+    .designer2 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .designer2 p {
       max-width: 90%;
       align-self: center;
       text-align: center;
+      margin-top: 30px;
+
     }
 }
 
@@ -310,52 +316,65 @@ button:hover {
 }
 
 .portfolio li {
-  width: 230px;
-  height: 230px;
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
   margin: 10px;
 }
 
 .portfolio1 {
   background: url("../images/image-0086.JPG") center center;
-  height: 230px;
-  width: 230px;
+  background-size: cover;
+  background-position: -100px 0px;
+  height: 250px;
+  width: 250px;
+}
+
+.portfolio1:hover {
+  background: url("../images/image-0086.JPG") center center;
+  background-size: cover;
+  background-position: -100px 0px;
+  height: 250px;
+  width: 250px;
+
 }
 
 .portfolio2 {
-  background: url("../images/image-0086.JPG") center center;
-  height: 230px;
-  width: 230px;
+  background: url("../images/image-0087.JPG") center center;
+  background-size: cover;
+
+  height: 250px;
+  width: 250px;
 }
 
 .portfolio3 {
   background: url("../images/image-0086.JPG") center center;
-  height: 230px;
-  width: 230px;
+  height: 250px;
+  width: 250px;
 }
 
 .portfolio3 {
   background: url("../images/image-0086.JPG") center center;
-  height: 230px;
-  width: 230px;
+  height: 250px;
+  width: 250px;
 }
 
 .portfolio4 {
   background: url("../images/image-0086.JPG") center center;
-  height: 230px;
-  width: 230px;
+  height: 250px;
+  width: 250px;
 }
 
 .portfolio5 {
   background: url("../images/image-0086.JPG") center center;
-  height: 230px;
-  width: 230px;
+  height: 250px;
+  width: 250px;
 }
 
 .portfolio6 {
   background: url("../images/image-0086.JPG") center center;
-  height: 230px;
-  width: 230px;
+  height: 250px;
+  width: 250px;
 }
 
 .email {
@@ -368,13 +387,11 @@ button:hover {
 
 
 input, select, textarea {
-
   font-family: 'Source Sans Pro', sans-serif;
   color: grey;
   font-weight: 300;
   font-size: .85em;
   line-height: 1.5em;
-
   background: #ebebeb;
   box-sizing: border-box;
   display: block;
@@ -385,8 +402,6 @@ input, select, textarea {
 }
 
 input[type=submit] {
-
-
   display: inline-block;
   align-self: center;
   background: #0099cc;
@@ -472,7 +487,7 @@ footer {
 .social-list li a{
   text-decoration: none;
   color: #fff;
-  margin-left: 10px;
+  margin-right: 15px;
 }
 .social-list li i{
   margin-right: 10px;
