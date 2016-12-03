@@ -197,7 +197,7 @@ button {
 }
 
 button:hover {
-  background-color: rgba(255, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
 
 }
 
@@ -310,51 +310,53 @@ button:hover {
 }
 
 .portfolio li {
-  width: 220px;
-  height: 220px;
+  width: 230px;
+  height: 230px;
   border-radius: 50%;
   margin: 10px;
 }
+
 .portfolio1 {
   background: url("../images/image-0086.JPG") center center;
-  height: 220px;
-  width: 220px;
+  height: 230px;
+  width: 230px;
 }
+
 .portfolio2 {
   background: url("../images/image-0086.JPG") center center;
-  height: 220px;
-  width: 220px;
+  height: 230px;
+  width: 230px;
 }
+
 .portfolio3 {
   background: url("../images/image-0086.JPG") center center;
-  height: 220px;
-  width: 220px;
+  height: 230px;
+  width: 230px;
 }
+
 .portfolio3 {
   background: url("../images/image-0086.JPG") center center;
-  height: 220px;
-  width: 220px;
+  height: 230px;
+  width: 230px;
 }
+
 .portfolio4 {
   background: url("../images/image-0086.JPG") center center;
-  height: 220px;
-  width: 220px;
+  height: 230px;
+  width: 230px;
 }
 
 .portfolio5 {
   background: url("../images/image-0086.JPG") center center;
-  height: 220px;
-  width: 220px;
+  height: 230px;
+  width: 230px;
 }
 
 .portfolio6 {
   background: url("../images/image-0086.JPG") center center;
-  height: 220px;
-  width: 220px;
+  height: 230px;
+  width: 230px;
 }
-
-
-
 
 .email {
   max-width: 100%;
@@ -363,6 +365,67 @@ button:hover {
   align-content: center;
   padding: 30px;
 }
+
+
+input, select, textarea {
+
+  font-family: 'Source Sans Pro', sans-serif;
+  color: grey;
+  font-weight: 300;
+  font-size: .85em;
+  line-height: 1.5em;
+
+  background: #ebebeb;
+  box-sizing: border-box;
+  display: block;
+  width: 100%;
+  margin: 15px auto;
+  padding: 10px;
+  border: none;
+}
+
+input[type=submit] {
+
+
+  display: inline-block;
+  align-self: center;
+  background: #0099cc;
+  border: 7px grey solid;
+  color: grey;
+  font-size: 0.85em;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+  text-align: center;
+  cursor: pointer;
+  height: 40px;
+  width:170px;
+  background-color: transparent;
+  margin-top: 25px;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+input[type=submit]:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+
+}
+
+textarea[name=message] {
+  resize: none;
+}
+
+input:required {
+  font-style: italic;
+}
+
+.required-text {
+  color: grey;
+  font-size: 0.85em;
+  font-style: italic;
+}
+
 
 footer {
   display: flex;

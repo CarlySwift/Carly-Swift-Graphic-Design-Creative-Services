@@ -3,18 +3,22 @@
 <html lang="en">
 <head>
   <title>Swift Design</title>
-  <meta charset="utf-8">
 
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/stylesheet.css">
+
   <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
   <script src="https://use.fontawesome.com/4fbf87bab3.js"></script>
 
-  <!-- Option 2: Font Awesome -->
-  <!-- <link rel="stylesheet" href="../fonts/font-awesome-4.7.0/cssfont-awesome/css/font-awesome.min.css"> -->
+  <script type="text/javascript" src="script/jquery-3.1.1.min.js"></script>
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
+
+
 
 <body>
 
@@ -33,7 +37,7 @@
       <h1 class="white-heading">Graphic<br>design &</h1>
       <h2 class="white-heading">creative services</h2>
     </div>
-    <button>Let's talk design<br><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
+    <button class=".js-scroll-to">Let's talk design<br><i class="fa fa-chevron-down" aria-hidden="true"></i></button>
   </header>
 
 <div class="designer">
@@ -54,24 +58,31 @@
 
   <div class="some-work">
     <h2>Some Work</h2>
-    <div class="container">
-    <ul class="portfolio">
-      <li class="portfolio1"></li>
-      <li class="portfolio2"></li>
-      <li class="portfolio3"></li>
-      <li class="portfolio4"></li>
-      <li class="portfolio5"></li>
-      <li class="portfolio6"></li>
-    </ul>
-    </div>
+      <div class="container">
+        <ul class="portfolio">
+          <li class="portfolio1"></li>
+          <li class="portfolio2"></li>
+          <li class="portfolio3"></li>
+          <li class="portfolio4"></li>
+          <li class="portfolio5"></li>
+          <li class="portfolio6"></li>
+        </ul>
+      </div>
     </div>
 
   <div class="email">
+    <a href="email-me"></a>
     <h2>Email me</h2>
     <div class="container">
-    <p>I love to talk about graphic design and creative solutions! </p>
-
-  </div>
+      <p>I love to talk about graphic design and creative solutions! </p>
+      <form name="#" onsubmit="#">
+        <input type="text" name="fname" placeholder="What is your name? *" required>
+        <input type="text" name="email" placeholder="Enter your email address please *" required>
+        <textarea name="message" placeholder="Write me a message. Thanks!" rows="5" cols="5"></textarea>
+        <p class="required-text">* required field</p>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
   </div>
 
 
@@ -93,7 +104,7 @@
 
   </footer>
 
-<script src="/script/.js"></script>
+<script src="script/script.js"></script>
 </body>
 
 
