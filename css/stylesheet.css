@@ -64,7 +64,7 @@ h5 {
 ul {
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  /*padding: 0;*/
 }
 
 li {
@@ -179,6 +179,18 @@ header {
   border: 8px solid #fff;
 }
 
+#banner2 {
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  margin-top: 30px;
+  width: auto;
+  padding: 20px 20px 10px 20px;
+  z-index: 2;
+  color: white;
+  border: 8px solid #fff;
+}
+
 button {
   font-size: 0.82em;
   font-weight: 700;
@@ -222,7 +234,6 @@ button:hover {
   border-radius: 50%;
   margin:0 auto;
   margin-bottom: 10px;
-  clear: both;
 }
 
 .designer2 p {
@@ -253,11 +264,12 @@ button:hover {
 }
 
 .solutions {
-  width: 100%;
+  /*width: 100%;*/
   display: flex;
   flex-flow: column wrap;
   align-content: center;
-  padding: 25px;
+  justify-content: center;
+  padding-bottom: 25px;
   background: #EBEBEB;
 }
 
@@ -274,7 +286,7 @@ button:hover {
   overflow: hidden;
 }
 
-.solutions-list h3 {
+.solutions-list h4 {
   color: #666;
   text-align: center;
 }
@@ -299,6 +311,28 @@ button:hover {
 }
 .solutions-list li:hover {
   background-position: -101px 0px;
+}
+
+.show-print {
+  display: flex;
+  background-color: grey;
+  background-size: auto;
+  flex-direction: column;
+  padding: 30px
+  
+}
+
+.show-print p {
+  color: white;
+
+}
+
+.show-print h4{
+  color: white;
+}
+
+.show-print img {
+
 }
 
 .some-work {
