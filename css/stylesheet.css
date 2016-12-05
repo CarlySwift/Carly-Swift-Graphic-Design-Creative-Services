@@ -317,22 +317,30 @@ button:hover {
   display: flex;
   background-color: grey;
   background-size: auto;
-  flex-direction: column;
-  padding: 30px
-  
+  flex-direction: row;
+  padding: 30px;
+  align-content: space-between;
+
 }
 
 .show-print p {
   color: white;
-
+    padding: 25px;
+  max-width: 50%;
+  align-self: flex-start;
 }
 
 .show-print h4{
   color: white;
+  align-self: flex-start;
+
+
 }
 
 .show-print img {
-
+  align-self: flex-start;
+  background-image: url('images/MrsLunas_Logo_display-01.png');
+  background-size: cover;
 }
 
 .some-work {
