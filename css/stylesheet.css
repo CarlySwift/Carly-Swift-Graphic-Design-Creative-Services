@@ -63,8 +63,6 @@ h5 {
 
 ul {
   list-style-type: none;
-  margin: 0;
-  /*padding: 0;*/
 }
 
 li {
@@ -78,7 +76,7 @@ li {
 
 .container {
   margin: 0 auto;
-  max-width: 75%;
+  /*max-width: 75%;*/
 }
 
 /* Navigation bar */
@@ -234,6 +232,7 @@ button:hover {
   border-radius: 50%;
   margin:0 auto;
   margin-bottom: 10px;
+  background-size: cover;
 }
 
 .designer2 p {
@@ -243,8 +242,6 @@ button:hover {
 
 @media all and (max-width: 800px) {
     .img-circle {
-      width: 300px;
-      height: 300px
       align-self: center;
     }
 
@@ -259,12 +256,10 @@ button:hover {
       align-self: center;
       text-align: center;
       margin-top: 30px;
-
     }
 }
 
 .solutions {
-  /*width: 100%;*/
   display: flex;
   flex-flow: column wrap;
   align-content: center;
@@ -290,9 +285,27 @@ button:hover {
   color: #666;
   text-align: center;
 }
+
 .solutions-list a {
   text-decoration:none;
 }
+
+.solutions-list ul {
+
+}
+
+@media all and (max-width: 600px) {
+  .solutions-list {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+  }
+
+  .solutions-list li {
+    margin: 25px 30px 15px 30px;
+  }
+}
+
 
 .digital {
   background: url("../images/ComepleteDesignSolution_digital.png")
@@ -315,32 +328,64 @@ button:hover {
 
 .show-print {
   display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  background-color: #A9a9a9;
+  background-size: auto;
+  padding: 30px;
+}
+
+.show-copy {
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
+  background-color: lightgrey;
+  background-size: auto;
+  padding: 30px
+}
+
+.show-photo {
+  display: flex;
+  flex-direction: row;
+  align-content: space-between;
   background-color: grey;
   background-size: auto;
-  flex-direction: row;
-  padding: 30px;
-  align-content: space-between;
-
+  padding: 30px
 }
 
-.show-print p {
+@media all and (max-width: 600px) {
+  .show-copy, .show-print, .show-photo {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .show-print p, .show-copy p, .show-photo p  {
+    color: white;
+    padding: 20px;
+    max-width: 90%;
+    align-self: center;
+  }
+
+  .show-print h4, .show-copy h4, .show-photo h4 {
+    align-self: center;
+  }
+}
+
+.show-print p, .show-copy p, .show-photo p  {
   color: white;
-    padding: 25px;
-  max-width: 50%;
+  padding: 20px;
   align-self: flex-start;
 }
 
-.show-print h4{
+.show-print h4, .show-copy h4, .show-photo h4{
   color: white;
   align-self: flex-start;
-
-
 }
 
-.show-print img {
+
+.show-print img, .show-copy img, .show-photo img {
   align-self: flex-start;
-  background-image: url('images/MrsLunas_Logo_display-01.png');
-  background-size: cover;
 }
 
 .some-work {
@@ -364,57 +409,48 @@ button:hover {
   margin: 10px;
 }
 
+.portfolio li:hover {
+  box-shadow: 0 0 5px #000;
+}
+
 .portfolio1 {
   background: url("../images/image-0086.JPG") center center;
   background-size: cover;
-  background-position: -100px 0px;
   height: 250px;
   width: 250px;
-}
-
-.portfolio1:hover {
-  background: url("../images/image-0086.JPG") center center;
-  background-size: cover;
-  background-position: -100px 0px;
-  height: 250px;
-  width: 250px;
-
 }
 
 .portfolio2 {
   background: url("../images/image-0087.JPG") center center;
   background-size: cover;
-
   height: 250px;
   width: 250px;
 }
 
 .portfolio3 {
-  background: url("../images/image-0086.JPG") center center;
-  height: 250px;
-  width: 250px;
-}
-
-.portfolio3 {
-  background: url("../images/image-0086.JPG") center center;
+  background: url("../images/image-0077.JPG") center center;
+  background-size: cover;
   height: 250px;
   width: 250px;
 }
 
 .portfolio4 {
   background: url("../images/image-0086.JPG") center center;
+  background-size: cover;
   height: 250px;
   width: 250px;
 }
 
 .portfolio5 {
   background: url("../images/image-0086.JPG") center center;
+  background-size: cover;
   height: 250px;
   width: 250px;
 }
 
 .portfolio6 {
   background: url("../images/image-0086.JPG") center center;
+  background-size: cover;
   height: 250px;
   width: 250px;
 }
@@ -503,7 +539,6 @@ footer {
   font-size: 0.6em;
   display: flex;
   flex-flow: row;
-  margin-left: 80%;
 }
 
 .copyright i {
@@ -513,7 +548,6 @@ footer {
 .social-bugs {
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
 }
 
 .social-list {
