@@ -8,14 +8,18 @@ $(function(){
 
 $(function(){
 
-    $("#banner2").hide().delay(800).slideDown(800).fadeIn('fast');
-
+    $("#banner2").hide().delay(600).slideDown(800).fadeIn('fast');
+    
 });
 
 
 //Open and close the solutions sections
 
 $(function(){
+    $('.show-print').hide();
+    $('.show-copy').hide();
+    $('.show-photo').hide();
+
     $('.print').click(function() {
         $('.show-print').slideToggle(400);
     });
