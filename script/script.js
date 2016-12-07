@@ -1,20 +1,56 @@
+//Animating the header content.
+
 $(function(){
 
     $("#banner").hide().delay(500).slideDown(500).fadeIn('fast');
 
 });
 
+$(function(){
 
-$(function() {
-  // Generic selector to be used anywhere
-  $(".js-scroll-to").click(function(e) {
+    $("#banner2").hide().delay(600).slideDown(800).fadeIn('fast');
+    
+});
 
-    // Get the href dynamically
-    var destination = $(this).attr('email-me');
 
-    // Animate scroll to destination
+//Open and close the solutions sections
+
+$(function(){
+    $('.show-print').hide();
+    $('.show-copy').hide();
+    $('.show-photo').hide();
+
+    $('.print').click(function() {
+        $('.show-print').slideToggle(400);
+    });
+    $('.copywriting').click(function() {
+        $('.show-copy').slideToggle(400);
+    });
+    $('.photography').click(function() {
+        $('.show-photo').slideToggle(400);
+    });
+
+//Main cta scroll to form
+    $("#banner2").click(function() {
     $('html, body').animate({
-      scrollTop: $(destination).offset().top
-    }, 500);
-  });
+        scrollTop: $(".email").offset().top
+    }, 1000);
+    });
+
+//Nav button scroll to div
+    $(".about").click(function() {
+        $('html, body').animate({
+            scrollTop: $(".designer").offset().top
+        }, 500);
+    });
+    $(".work").click(function() {
+        $('html, body').animate({
+            scrollTop: $(".some-work").offset().top
+        }, 500);
+    });
+    $(".contact").click(function() {
+        $('html, body').animate({
+            scrollTop: $(".email").offset().top
+        }, 500);
+    });
 });
