@@ -12,6 +12,9 @@ $(function(){
 
 });
 
+
+//Open and close the solutions sections
+
 $(function(){
     $('.print').click(function() {
         $('.show-print').slideToggle(400);
@@ -47,34 +50,3 @@ $(function(){
         }, 500);
     });
 });
-
-
-
-//Getting the page to auto scroll to the form when the header button is clicked
-
-$(function() {
-  // Generic selector to be used anywhere
-  $(".js-scroll-to").click(function(e) {
-
-    // Get the href dynamically
-    var destination = $(this).attr('email-me');
-
-    // Animate scroll to destination
-    $('html, body').animate({
-      scrollTop: $(destination).offset().top
-    }, 500);
-  });
-});
-
-
-// Getting the 3 "solutions buttons to reveal their content on click
-
-  $("show-print").hide();
-
-
-$(function(){
-
-  $(".print").click(function(){
-    $("show-print").show();
-});
-})
