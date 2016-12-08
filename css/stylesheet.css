@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 /*Genral Styling*/
+=======
+/*General Styling*/
+>>>>>>> master
 
 body {
   font-family: 'Oswald', 'Helvetica', sans-serif;
@@ -179,6 +183,8 @@ nav a:hover {
   }
 }
 
+/*Header area */
+
 header {
   display:-webkit-box;
   display:-ms-flexbox;
@@ -250,7 +256,11 @@ header {
 
 }
 
+<<<<<<< HEAD
 /*About me section*/
+=======
+/*About Me Section*/
+>>>>>>> master
 
 .designer {
   display: -webkit-box;
@@ -348,6 +358,8 @@ header {
   padding-bottom: 25px;
   background: #EBEBEB;
 }
+
+/*Solutions Section*/
 
 .solutions-list {
   display: -webkit-box;
@@ -515,7 +527,10 @@ header {
       align-self: flex-start;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
 /*Portfolio Section*/
 
 .some-work {
@@ -550,8 +565,6 @@ header {
 .portfolio li:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);;
 }
-
-
 
 .portfolio1 {
   background: url("../images/image-0086.JPG") center center;
@@ -597,7 +610,11 @@ header {
   width: 250px;
 }
 
+<<<<<<< HEAD
 /*Contact Me Section*/
+=======
+/*Contact Section*/
+>>>>>>> master
 
 .email {
   max-width: 100%;
@@ -665,6 +682,7 @@ input:required {
   font-style: italic;
 }
 
+/*Footer Section*/
 
 /*Footer Section*/
 
