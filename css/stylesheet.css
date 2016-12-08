@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 /*Genral Styling*/
 =======
 /*General Styling*/
@@ -7,6 +8,8 @@
 
 =======
 >>>>>>> parent of 431f6ac... commit
+=======
+>>>>>>> master
 body {
   font-family: 'Oswald', 'Helvetica', sans-serif;
   font-size: 16px;
@@ -187,8 +190,6 @@ nav a:hover {
   }
 }
 
-/*Header area */
-
 header {
   display:-webkit-box;
   display:-ms-flexbox;
@@ -262,6 +263,7 @@ header {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 /*About me section*/
 =======
 /*About Me Section*/
@@ -269,6 +271,8 @@ header {
 
 =======
 >>>>>>> parent of 431f6ac... commit
+=======
+>>>>>>> master
 .designer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -361,8 +365,6 @@ header {
   padding-bottom: 25px;
   background: #EBEBEB;
 }
-
-/*Solutions Section*/
 
 .solutions-list {
   display: -webkit-box;
@@ -532,6 +534,7 @@ header {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> master
@@ -539,6 +542,8 @@ header {
 
 =======
 >>>>>>> parent of 431f6ac... commit
+=======
+>>>>>>> master
 .some-work {
   max-width: 100%;
   display: -webkit-box;
@@ -571,6 +576,8 @@ header {
 .portfolio li:hover {
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);;
 }
+
+
 
 .portfolio1 {
   background: url("../images/image-0086.JPG") center center;
@@ -618,6 +625,7 @@ header {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 /*Contact Me Section*/
 =======
 /*Contact Section*/
@@ -625,6 +633,8 @@ header {
 
 =======
 >>>>>>> parent of 431f6ac... commit
+=======
+>>>>>>> master
 .email {
   max-width: 100%;
   display: -webkit-box;
@@ -693,7 +703,6 @@ input:required {
   font-style: italic;
 }
 
-/*Footer Section*/
 
 footer {
   display: -webkit-box;
