@@ -1,3 +1,5 @@
+/*Genral Styling*/
+
 body {
   font-family: 'Oswald', 'Helvetica', sans-serif;
   font-size: 16px;
@@ -84,7 +86,6 @@ li {
 
 .container {
   margin: 0 auto;
-  /*max-width: 75%;*/
 }
 
 /* Navigation bar */
@@ -249,6 +250,8 @@ header {
 
 }
 
+/*About me section*/
+
 .designer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -326,6 +329,10 @@ header {
       margin-top: 30px;
     }
 }
+
+
+
+/*Solutions section*/
 
 .solutions {
   display: -webkit-box;
@@ -508,6 +515,9 @@ header {
       align-self: flex-start;
 }
 
+
+/*Portfolio Section*/
+
 .some-work {
   max-width: 100%;
   display: -webkit-box;
@@ -587,6 +597,8 @@ header {
   width: 250px;
 }
 
+/*Contact Me Section*/
+
 .email {
   max-width: 100%;
   display: -webkit-box;
@@ -598,7 +610,6 @@ header {
       align-content: center;
   padding: 30px;
 }
-
 
 input, select, textarea {
   font-family: 'Source Sans Pro', sans-serif;
@@ -637,7 +648,6 @@ input[type=submit] {
 input[type=submit]:hover {
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
-
 }
 
 textarea[name=message] {
@@ -655,6 +665,8 @@ input:required {
   font-style: italic;
 }
 
+
+/*Footer Section*/
 
 footer {
   display: -webkit-box;
