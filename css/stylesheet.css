@@ -1,9 +1,12 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 /*Genral Styling*/
 =======
 /*General Styling*/
 >>>>>>> master
 
+=======
+>>>>>>> parent of 431f6ac... commit
 body {
   font-family: 'Oswald', 'Helvetica', sans-serif;
   font-size: 16px;
@@ -90,6 +93,7 @@ li {
 
 .container {
   margin: 0 auto;
+  /*max-width: 75%;*/
 }
 
 /* Navigation bar */
@@ -257,11 +261,14 @@ header {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /*About me section*/
 =======
 /*About Me Section*/
 >>>>>>> master
 
+=======
+>>>>>>> parent of 431f6ac... commit
 .designer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -339,10 +346,6 @@ header {
       margin-top: 30px;
     }
 }
-
-
-
-/*Solutions section*/
 
 .solutions {
   display: -webkit-box;
@@ -528,11 +531,14 @@ header {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> master
 /*Portfolio Section*/
 
+=======
+>>>>>>> parent of 431f6ac... commit
 .some-work {
   max-width: 100%;
   display: -webkit-box;
@@ -611,11 +617,14 @@ header {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /*Contact Me Section*/
 =======
 /*Contact Section*/
 >>>>>>> master
 
+=======
+>>>>>>> parent of 431f6ac... commit
 .email {
   max-width: 100%;
   display: -webkit-box;
@@ -627,6 +636,7 @@ header {
       align-content: center;
   padding: 30px;
 }
+
 
 input, select, textarea {
   font-family: 'Source Sans Pro', sans-serif;
@@ -665,6 +675,7 @@ input[type=submit] {
 input[type=submit]:hover {
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
+
 }
 
 textarea[name=message] {
@@ -681,8 +692,6 @@ input:required {
   font-size: 0.85em;
   font-style: italic;
 }
-
-/*Footer Section*/
 
 /*Footer Section*/
 
